@@ -1,0 +1,11 @@
+ spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      
+  cloud:
+    stream:
+      bindings:
+        fortuneOutput:
+            destination: fortuneInput 
+    

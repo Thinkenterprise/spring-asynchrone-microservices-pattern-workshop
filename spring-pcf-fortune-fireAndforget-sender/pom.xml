@@ -11,7 +11,7 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
- 
+
 	<groupId>com.thinkenterprise</groupId>
 	<artifactId>spring-cloud-stream-tutorial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -24,6 +24,7 @@
 	<dependencyManagement>
 		<dependencies>
 
+			<!--  Spring Boot Bill of Material  -->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
@@ -32,6 +33,7 @@
 				<scope>import</scope>
 			</dependency>
 
+		<!--  Spring Cloud Bill of Material  -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -46,16 +48,29 @@
 
 	<dependencies>
 
+		<!--  Spring Boot Dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Third Party  -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
+		<!--  Spring Cloud Stream Dependencies -->
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>

@@ -14,22 +14,15 @@
  * limitations under the License.
  *
  *
- * @author Rafael Kansy
  * @author Michael Schaefer
  */
+package com.thinkenterprise.fortune;
 
-package com.thinkenterprise;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 
+public interface FortuneRepository extends CrudRepository<Fortune, Long>{
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.stream.annotation.EnableBinding;
-
-@SpringBootApplication
-@EnableBinding
-public class Application {
-
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+    @Query("select fortune from Fortune fortune order by RAND()")
+    public Iterable<Fortune> randomFortunes();
 }
