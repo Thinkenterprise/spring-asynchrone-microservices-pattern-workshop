@@ -30,9 +30,9 @@ import com.thinkenterprise.fortune.FortuneRepository;
 
 @RestController
 @RequestMapping("stream")
-public class FortuneStreamSenderController {
+public class FortuneMessageProducerController {
 	
-	Logger logger = LoggerFactory.getLogger(FortuneStreamSenderController.class);
+	Logger logger = LoggerFactory.getLogger(FortuneMessageProducerController.class);
 	
 	@Autowired
 	FortuneOutputChannel fortuneOutputStream;

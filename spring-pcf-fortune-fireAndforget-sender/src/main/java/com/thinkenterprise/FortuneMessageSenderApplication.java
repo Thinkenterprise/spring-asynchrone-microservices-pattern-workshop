@@ -25,11 +25,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 
 @SpringBootApplication
-public class FortuneStreamReceiverApplication {
+public class FortuneMessageSenderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FortuneStreamReceiverApplication.class, args);
+        SpringApplication.run(FortuneMessageSenderApplication.class, args);
     }
-    
     
 }

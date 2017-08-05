@@ -4,7 +4,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FortuneStreamReceiver {
+public class FortuneMessageReceiver {
 	
 	@StreamListener(FortuneInputChannel.INPUT)
 	public void receiverFortuneMessage(String message) {

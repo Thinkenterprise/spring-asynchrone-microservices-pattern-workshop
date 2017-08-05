@@ -24,8 +24,8 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableBinding(value=FortuneOutputChannel.class)
-public class FortuneStreamConfiguration {
+@EnableBinding(value=FortuneInputChannel.class)
+public class FortuneMessageConfiguration {
   
     
 }
