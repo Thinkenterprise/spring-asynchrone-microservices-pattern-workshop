@@ -29,7 +29,7 @@ import com.thinkenterprise.fortune.Fortune;
 import com.thinkenterprise.fortune.FortuneRepository;
 
 @RestController
-@RequestMapping("stream")
+@RequestMapping("message")
 public class FortuneMessageProducerController {
 	
 	Logger logger = LoggerFactory.getLogger(FortuneMessageProducerController.class);
@@ -40,7 +40,7 @@ public class FortuneMessageProducerController {
 	@Autowired
 	FortuneRepository fortuneRepository;
 
-	@RequestMapping("/random")
+	@RequestMapping("/sendRandom")
 	public String fortune() {
 		
 		Iterable<Fortune> result = fortuneRepository.randomFortunes();

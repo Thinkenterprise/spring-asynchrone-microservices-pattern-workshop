@@ -7,7 +7,6 @@ public interface FortuneOutputChannel {
 	
 	String OUTPUT = "fortuneOutput";
 	
-	
 	@Output(FortuneOutputChannel.OUTPUT)
 	MessageChannel fortuneOutput();
 
