@@ -1,0 +1,8 @@
+applications:
+- name: fortuneservice
+  memory: 1024M
+  instances: 1
+  host: fortunes-${random-word}
+  path: target\spring-fortune-cloud-message-consumer-0.0.1-SNAPSHOT.jar
+  services:
+  - fortune-message-queue
