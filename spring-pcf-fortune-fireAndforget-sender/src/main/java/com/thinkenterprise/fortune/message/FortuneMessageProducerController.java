@@ -16,7 +16,7 @@
  *
  * @author Michael Schaefer
  */
-package com.thinkenterprise.fortune.stream;
+package com.thinkenterprise.fortune.message;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.thinkenterprise.fortune.stream;
+package com.thinkenterprise.fortune.message;
 
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;

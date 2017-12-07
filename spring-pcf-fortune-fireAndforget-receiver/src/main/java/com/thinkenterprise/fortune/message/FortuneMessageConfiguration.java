@@ -17,14 +17,14 @@
  * @author Michael Schaefer
  */
 
-package com.thinkenterprise.fortune.stream;
+package com.thinkenterprise.fortune.message;
 
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableBinding(value=FortuneInputChannel.class)
+@EnableBinding(value=FortuneReceiverChannel.class)
 public class FortuneMessageConfiguration {
   
     

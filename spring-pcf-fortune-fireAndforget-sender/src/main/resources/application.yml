@@ -7,5 +7,4 @@
     stream:
       bindings:
         fortuneOutput:
-            destination: fortuneInput 
-    
+            destination: fortuneInput

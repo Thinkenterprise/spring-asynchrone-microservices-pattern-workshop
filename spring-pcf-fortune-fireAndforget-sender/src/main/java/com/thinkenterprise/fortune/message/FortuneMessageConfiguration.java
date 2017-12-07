@@ -17,7 +17,7 @@
  * @author Michael Schaefer
  */
 
-package com.thinkenterprise.fortune.stream;
+package com.thinkenterprise.fortune.message;
 
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
