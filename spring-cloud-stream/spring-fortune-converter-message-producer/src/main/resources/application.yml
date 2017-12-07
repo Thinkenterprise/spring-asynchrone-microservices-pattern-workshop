@@ -1,0 +1,18 @@
+server:
+ port: 8081
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      
+  cloud:
+    stream:
+      bindings:
+        fortuneOutput:
+            destination: fortuneInputDestination
+            content-type: application/json
+            
+            
+
+  
