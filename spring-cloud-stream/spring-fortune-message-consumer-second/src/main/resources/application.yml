@@ -1,0 +1,18 @@
+server:
+  port: 0    
+    
+spring:
+  cloud:
+    stream:
+      bindings:
+       secondFortuneInput:
+        destination: fortuneInputDestination
+        group: fortuneInputGroup
+      rabbit:
+       bindings:
+        secondFortuneInput:
+         consumer:
+          autoBindDlq: false
+          republishToDlq : true
+          deadLetterQueueName: mydlq 
+          deadLetterExchange: mydlq
